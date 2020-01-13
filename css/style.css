@@ -1,0 +1,54 @@
+a{
+    font-family: "Raleway", sans-serif;
+}
+#header{
+    height: 70px;
+    background-color: #000000;
+}
+#header #logo{
+
+}
+
+
+#hexagon {
+    width: 130px;
+    height: 200px;
+    position: relative;
+    z-index:-1;
+    margin:0 auto;
+    background-color: #fff3cd;
+}
+#hexagon:before {
+    content: "";
+    left:-130px;
+    display:block;
+    position: relative;
+    border-right: 60px solid #fff3cd;
+    border-top: 100px solid transparent;
+    border-bottom: 100px solid transparent;
+}
+#hexagon:after {
+    content: "";
+    right:-130px;
+    top:-200px;
+    position: relative;
+    display:block;
+    border-left: 60px solid #fff3cd;
+    border-top: 100px solid transparent;
+    border-bottom: 100px solid transparent;
+}
+
+
+#nav-menu-container ul{
+    margin-right: 150px;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+#nav-menu-container ul li{
+    margin-right: 50px;
+}
+#nav-menu-container ul li a{
+    color: #a4a4a4;
+    text-decoration: none;
+}
