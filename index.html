@@ -4,42 +4,100 @@
     <meta charset="UTF-8">
     <title>Creativia</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/script.js"></script>
 </head>
 <body>
 <!--Header-->
 <header id="header">
-    <div class="container-fluid">
 
-        <nav class="navbar" id="nav-menu-container">
-
-            <div id="logo">
-                <h1><a href="#intro">Creativia</a></h1>
+    <nav class="navbar navbar-expand-lg" id="nav-menu-container">
+        <div class="outter">
+            <p>Creativia</p>
+            <div class="inner">
             </div>
+        </div>
+        <ul class="nav">
+            <li class="nav-item active"><a href="#intro">Home</a></li>
+            <li class="nav-item"><a href="#about">About Us</a></li>
+            <li class="nav-item"><a href="#portfolio">Portfolio</a></li>
+            <li class="nav-item"><a href="#clients">Clients</a></li>
+            <li class="nav-item"><a href="#team">Team</a></li>
+            <li class="nav-item"><a href="#services">Services</a></li>
+            <li class="nav-item"><a href="#blog">Blog</a></li>
+            <li class="nav-item"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-            <ul class="nav">
-                <li class="nav-item active"><a href="#intro">Home</a></li>
-                <li class="nav-item"><a href="#about">About Us</a></li>
-                <li class="nav-item"><a href="#portfolio">Portfolio</a></li>
-                <li class="nav-item"><a href="#clients">Clients</a></li>
-                <li class="nav-item"><a href="#team">Team</a></li>
-                <li class="nav-item"><a href="#services">Services</a></li>
-                <li class="nav-item"><a href="#blog">Blog</a></li>
-                <li class="nav-item"><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
 </header>
 
-<div class="container">
-    <h1></h1>
-    <div class="demo">
-        <div class="hexa text-center" id="hexagon"></div>
-        <div class="hex-over">B</div>
+
+<section id="intro">
+    <div class="intro-container">
+        <div id="introCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+
+            <div class="carousel-inner" role="listbox">
+
+                <div class="carousel-item active">
+                    <div class="carousel-background"><img src="images/woman-in-red-m.png" alt="woman"></div>
+                    <div class="carousel-container">
+                        <div class="carousel-content">
+                            <h2>why creativia ?</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus eu
+                                ligula ac nisl volutpat tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim erat.
+                                Mauris dictum lorem eu tortor porta placerat. Suspendisse ac vestibulum eros. Nulla mi
+                                ipsum, consequat commodo condimentum vitae, </p>
+                            <a href="#" class="btn-get-started scrollto">features</a>
+                            <a href="#" class="btn-get-started scrollto">Free PSD</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="carousel-background"><img src="images/business-group-m.png" alt="woman"></div>
+                    <div class="carousel-container">
+                        <div class="carousel-content">
+                            <h2>4534739543534090</h2>
+                            <p>fnjkdbjkfnjkf nwk fjiour893uj980u0 3j0nt. Vestibulum vitae rhoncus odio Fusce sed enim
+                                erat. Mauris dictum lorem eu tortor porta placerat. Suspendisse ac vestibulum eros.
+                                Nulla mi ipsum, consequat commodo condimentum vitae, </p>
+                            <a href="#" class="btn-get-started scrollto">features</a>
+                            <a href="#" class="btn-get-started scrollto">Free PSD</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="carousel-background"><img src="images/woman-in-red-m.png" alt="woman"></div>
+                    <div class="carousel-container">
+                        <div class="carousel-content">
+                            <h2>zsxdcfgvbh2345</h2>
+                            <p>dtfyuokpjhuiwejkfio[re jkglejkgkjoepgjke r;gkep kger;jgfwer kmfoper jkoprweo</p>
+                            <a href="#" class="btn-get-started scrollto">features</a>
+                            <a href="#" class="btn-get-started scrollto">Free PSD</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon ion-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+
+            <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon ion-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+
+        </div>
     </div>
-</div>
+</section>
+
 
 <main>
     <section></section>
@@ -48,12 +106,11 @@
 <footer></footer>
 
 
-
-
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
 </body>
 </html>

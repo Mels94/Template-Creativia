@@ -1,54 +1,202 @@
-a{
+a {
     font-family: "Raleway", sans-serif;
 }
-#header{
+
+/*header*/
+#header {
     height: 70px;
     background-color: #000000;
 }
-#header #logo{
 
+
+.outter:before,
+.outter:after,
+.inner:before,
+.inner:after {
+    background: #ff0036;
 }
 
-
-#hexagon {
-    width: 130px;
-    height: 200px;
-    position: relative;
-    z-index:-1;
-    margin:0 auto;
-    background-color: #fff3cd;
+.inner {
+    border-color: #ff0036;
 }
-#hexagon:before {
+
+.outter {
+    position: fixed;
+    top: -130px;
+    left: 13%;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.outter:before,
+.outter:after {
     content: "";
-    left:-130px;
-    display:block;
-    position: relative;
-    border-right: 60px solid #fff3cd;
-    border-top: 100px solid transparent;
-    border-bottom: 100px solid transparent;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 2px;
+    height: 102px;
+    margin-top: -51px;
+    z-index: 1;
 }
-#hexagon:after {
+
+.outter:after {
+    left: auto;
+    right: 0;
+    margin-top: -51px;
+    height: 102px;
+}
+
+.inner {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 250px;
+    background: #131313;
+    border-width: 2px;
+    border-style: solid;
+    -webkit-transform: rotate(45deg);
+}
+
+.inner:before,
+.inner:after {
+    -webkit-transform: rotate(45deg);
     content: "";
-    right:-130px;
-    top:-200px;
-    position: relative;
-    display:block;
-    border-left: 60px solid #fff3cd;
-    border-top: 100px solid transparent;
-    border-bottom: 100px solid transparent;
+    position: absolute;
+    width: 2px;
+    height: 103px;
+    margin-top: -40px;
+    z-index: 1;
+    right: auto;
+    left: 34px;
+    bottom: auto;
+    top: 24px;
 }
 
+.inner:after {
+    height: 103px;
+    right: 35px;
+    left: auto;
+    bottom: -17px;
+    top: auto;
+}
 
-#nav-menu-container ul{
+p {
+    text-align: center;
+    line-height: 360px;
+    position: relative;
+    z-index: 10;
+    font-size: 30px;
+    color: #f2f2f2;
+}
+
+#nav-menu-container {
+    padding: 21px !important;
+    float: right;
     margin-right: 150px;
+}
+
+#nav-menu-container ul {
     font-size: 18px;
     font-weight: 400;
     text-transform: uppercase;
 }
-#nav-menu-container ul li{
+
+#nav-menu-container ul li {
     margin-right: 50px;
 }
-#nav-menu-container ul li a{
+
+#nav-menu-container ul li a {
     color: #a4a4a4;
     text-decoration: none;
+}
+
+/*Intro Section*/
+#intro {
+    width: 100%;
+    height: 700px;
+}
+#intro .carousel-item {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#intro .carousel-item::before {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+#intro .carousel-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+#intro .carousel-background img {
+    max-width: 100%;
+}
+#intro .carousel-content {
+    text-align: center;
+}
+#intro h2 {
+    color: #fff;
+    margin-bottom: 30px;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+#intro p {
+    width: 80%;
+    margin: 0 auto 30px auto;
+    color: #fff;
+}
+
+#intro .carousel-fade {
+    overflow: hidden;
+}
+
+#intro .carousel-fade .carousel-inner .carousel-item {
+    transition-property: opacity;
+}
+
+#intro .carousel-fade .carousel-inner .carousel-item,
+#intro .carousel-fade .carousel-inner .active.carousel-item-left,
+#intro .carousel-fade .carousel-inner .active.carousel-item-right {
+    opacity: 0;
+}
+
+#intro .carousel-fade .carousel-inner .active,
+#intro .carousel-fade .carousel-inner .carousel-item-next.carousel-item-left,
+#intro .carousel-fade .carousel-inner .carousel-item-prev.carousel-item-right {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#intro .carousel-fade .carousel-inner .carousel-item-next,
+#intro .carousel-fade .carousel-inner .carousel-item-prev,
+#intro .carousel-fade .carousel-inner .active.carousel-item-left,
+#intro .carousel-fade .carousel-inner .active.carousel-item-right {
+    left: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+#intro .carousel-control-prev,
+#intro .carousel-control-next {
+    width: 10%;
+}
+
+#intro .carousel-control-next-icon,
+#intro .carousel-control-prev-icon {
+    font-size: 32px;
+    line-height: 1;
 }
