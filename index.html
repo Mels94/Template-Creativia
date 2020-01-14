@@ -6,14 +6,16 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/script.js"></script>
 </head>
 <body>
+
 <!--Header-->
 <header id="header">
 
-    <nav class="navbar navbar-expand-lg" id="nav-menu-container">
+<!--    <nav class="navbar navbar-expand-lg" id="nav-menu-container">
         <div class="outter">
             <p>Creativia</p>
             <div class="inner">
@@ -29,19 +31,45 @@
             <li class="nav-item"><a href="#blog">Blog</a></li>
             <li class="nav-item"><a href="#contact">Contact</a></li>
         </ul>
+    </nav>-->
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark navbar-default fixed-top p-0" id="nav-menu-container">
+        <a class="navbar-brand" href="#">
+            <div class="outter">
+                <p>Creativia</p>
+                <div class="inner">
+                </div>
+            </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item p-2 active"><a class="nav-link" href="#intro">Home</a></li>
+                <li class="nav-item p-2"><a class="nav-link" href="#about">About&#160;Us</a></li>
+                <li class="nav-item p-2"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                <li class="nav-item p-2"><a class="nav-link" href="#clients">Clients</a></li>
+                <li class="nav-item p-2"><a class="nav-link" href="#team">Team</a></li>
+                <li class="nav-item p-2"><a class="nav-link" href="#services">Services</a></li>
+                <li class="nav-item p-2"><a class="nav-link" href="#blog">Blog</a></li>
+                <li class="nav-item p-2"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
 </header>
 
 
+
+<!--Intro-->
 <section id="intro">
-    <div class="intro-container">
+<!--    <div class="intro-container">
         <div id="introCarousel" class="carousel slide carousel-fade" data-ride="carousel">
-
             <div class="carousel-inner" role="listbox">
-
                 <div class="carousel-item active">
-                    <div class="carousel-background"><img src="images/woman-in-red-m.png" alt="woman"></div>
+                    <div class="carousel-background"><img class="w-100" src="images/woman-in-red-m.png" alt="woman"></div>
                     <div class="carousel-container">
                         <div class="carousel-content">
                             <h2>why creativia ?</h2>
@@ -54,9 +82,8 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="carousel-item">
-                    <div class="carousel-background"><img src="images/business-group-m.png" alt="woman"></div>
+                    <div class="carousel-background"><img class="w-100" src="images/business-group-m.png" alt="woman"></div>
                     <div class="carousel-container">
                         <div class="carousel-content">
                             <h2>4534739543534090</h2>
@@ -68,9 +95,8 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="carousel-item">
-                    <div class="carousel-background"><img src="images/woman-in-red-m.png" alt="woman"></div>
+                    <div class="carousel-background"><img class="w-100" src="images/woman-in-red-m.png" alt="woman"></div>
                     <div class="carousel-container">
                         <div class="carousel-content">
                             <h2>zsxdcfgvbh2345</h2>
@@ -80,8 +106,6 @@
                         </div>
                     </div>
                 </div>
-
-
             </div>
 
             <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
@@ -95,7 +119,32 @@
             </a>
 
         </div>
+    </div>-->
+
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="img-fluid w-100" src="images/woman-in-red-m.png" alt="woman">
+            </div>
+            <div class="carousel-item">
+                <img class="img-fluid w-100" src="images/nature-pier.png" alt="Chicago">
+            </div>
+            <div class="carousel-item">
+                <img class="img-fluid w-100" src="images/Lonely-Girl.png" alt="New York">
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+        </a>
     </div>
+
 </section>
 
 
