@@ -6,7 +6,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 /*=====================header====================*/
 #header .bg-dark {
-    background-color: #000000 !important;
+    /*background-color: #000000 !important;*/
 }
 
 .octagonWrap {
@@ -152,4 +152,52 @@ h1, h2, h3, h4, h5, h6 {
 #about_creativia{
     padding: 90px;
     background-color: #fff3cd;
+}
+#about_creativia header p{
+    font-weight: 600;
+    margin: 20px 0 70px 0;
+}
+.accordion .card-header:after {
+    font-family: 'FontAwesome', sans-serif;
+    content: "\f068";
+    float: left;
+    margin-right: 45px;
+}
+.accordion .card-header.collapsed:after {
+    content: "\f067";
+}
+.accordion .card{
+    border: 0;
+}
+.accordion .card .card-header{
+    border: 1px solid rgba(0,0,0,.125);
+    margin-bottom: 10px !important;
+}
+.accordion .card .card-body{
+    border: 1px solid rgba(0,0,0,.125);
+    border-top: none;
+    margin-top: -11px;
+    margin-bottom: 10px !important;
+    padding: 10px 15px;
+}
+#box .static1{
+    position: relative;
+}
+#box .static2{
+    position: absolute;
+    z-index: 2;
+    margin-left: 225px;
+}
+/*#box .static1 img{*/
+/*    margin-top: 15px;*/
+/*    width: 95%;*/
+/*}*/
+/*#box .static2 img{*/
+/*    margin-top: 15px;*/
+/*    width: 123%;*/
+/*}*/
+#box .static3{
+    position: absolute;
+    z-index: 3;
+    margin-left: 78px;
 }
