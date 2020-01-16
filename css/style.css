@@ -180,24 +180,78 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 10px !important;
     padding: 10px 15px;
 }
-#box .static1{
-    position: relative;
-}
-#box .static2{
+
+.left-img{
+    width: 277px;
+    height: 300px;
     position: absolute;
-    z-index: 2;
-    margin-left: 225px;
-}
-/*#box .static1 img{*/
-/*    margin-top: 15px;*/
-/*    width: 95%;*/
-/*}*/
-/*#box .static2 img{*/
-/*    margin-top: 15px;*/
-/*    width: 123%;*/
-/*}*/
-#box .static3{
-    position: absolute;
+    background-color: #1c7430;
+    clip-path: polygon(50% 0, 20% 50%, 50% 100%, 25% 100%, 0% 50%, 25% 0%);
+    background-image: url(../images/Layer_8.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-top: 20px;
     z-index: 3;
-    margin-left: 78px;
 }
+.right-img{
+    width: 277px;
+    height: 300px;
+    position: absolute;
+    background-color: #1c7430;
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 50% 100%, 80% 50%, 50% 0);
+    background-image: url(../images/Layer_99.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    z-index: 4;
+    margin-left: 44%;
+}
+
+
+
+.hexagon {
+    width: 684px;
+    height: 340px;
+    background: red;
+    transform: rotate(120deg);
+    -moz-transform: rotate(120deg);
+    -ms-transform: rotate(120deg);
+    -o-transform: rotate(120deg);
+    -webkit-transform: rotate(120deg);
+    /*margin: 200px auto;*/
+    overflow: hidden;
+    visibility: hidden;
+
+    position: absolute;
+    margin-left: -15%;
+}
+
+.hexagon-inside{
+    width: 100%;
+    height: 100%;
+    background: green;
+    transform: rotate(-60deg);
+    -moz-transform: rotate(-60deg);
+    -ms-transform: rotate(-60deg);
+    -o-transform: rotate(-60deg);
+    -webkit-transform: rotate(-60deg);
+    overflow: hidden;
+
+}
+.hexagon-image{
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/1_.png");
+    background-position: center;
+    background-size: 80% 100%;
+    transform: rotate(-60deg);
+    -moz-transform: rotate(-60deg);
+    -ms-transform: rotate(-60deg);
+    -o-transform: rotate(-60deg);
+    -webkit-transform: rotate(-60deg);
+    visibility: visible;
+
+}
+
+
+
