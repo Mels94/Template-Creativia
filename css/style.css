@@ -150,8 +150,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /*=========================About creativia=======================*/
 #about_creativia{
-    padding: 100px;
-    background-color: #fff3cd;
+    padding: 70px 0;
+    /*background-color: #fff3cd;*/
 }
 #about_creativia header h3{
     font-weight: 700;
@@ -187,16 +187,19 @@ h1, h2, h3, h4, h5, h6 {
     padding: 10px 15px;
 }
 #about_creativia .left-img{
-    width: 277px;
+    width: 49%;
     height: 300px;
     position: absolute;
     background-color: #1c7430;
     clip-path: polygon(55% 0, 24% 50%, 55% 100%, 33% 100%, 1% 50%, 32% 0%);
-    background-image: url(../images/Layer_8.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+    /*background-image: url(../images/Layer_8.png);*/
+    /*background-size: 100% 100%;*/
+    /*background-repeat: no-repeat;*/
     margin-top: 20px;
     z-index: 3;
+}
+#about_creativia .left-img img{
+    margin-left: -60px;
 }
 #about_creativia .left-img::before {
     content: '';
@@ -210,17 +213,20 @@ h1, h2, h3, h4, h5, h6 {
     bottom: auto;
 }
 #about_creativia .right-img{
-    width: 277px;
+    width: 49%;
     height: 300px;
     position: absolute;
     background-color: #1c7430;
     clip-path: polygon(70% 0%, 100% 50%, 70% 100%, 46% 100%, 77% 50%, 46% 0);
     background-image: url(../images/Layer_9.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+    /*background-size: 100% 100%;*/
+    /*background-repeat: no-repeat;*/
     margin-top: 20px;
     z-index: 4;
     margin-left: 45%;
+}
+#about_creativia .right-img img{
+    margin: -130px 0 0 -106px;
 }
 #about_creativia .right-img::before {
     content: '';
@@ -235,13 +241,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #accordion_img .hexa{
-    width: 386px;
+    width: 72%;
     height: 340px;
     clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
     margin-left: 14%;
-}
-#accordion_img .hexa img{
-    background-position: center;
 }
 
 #about_creativia .line_hr{
@@ -320,4 +323,100 @@ h1, h2, h3, h4, h5, h6 {
 }
 .hex_4 .poligon4:hover::before{
     background-image: url("../images/1_1.png");
+}
+
+
+/*=========================Portfolio=======================*/
+#portfolio{
+    padding: 70px 0;
+    background-color: #fff3cd;
+}
+#portfolio header h3{
+    font-weight: 700;
+    /*color: #fff;*/
+}
+/*
+#portfolio #portfolio-flters {
+    padding: 0;
+    margin: 5px 0 70px 0;
+    list-style: none;
+    text-align: center;
+}
+#portfolio #portfolio-flters li {
+    cursor: pointer;
+    margin: 15px 15px 15px 0;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #a4a4a4;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    transition: all 0.3s ease-in-out;
+}
+#portfolio #portfolio-flters li:hover,
+#portfolio #portfolio-flters li.filter-active {
+    color: #FF0036;
+}
+#portfolio .portfolio-wrap {
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+#portfolio .portfolio-wrap:hover {
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.16);
+}
+#portfolio .portfolio-item figure {
+    background: #000;
+    overflow: hidden;
+    height: 240px;
+    position: relative;
+    border-radius: 4px 4px 0 0;
+    margin: 0;
+}
+#portfolio .portfolio-item figure:hover img {
+    opacity: 0.4;
+    transition: 0.3s;
+}*/
+#portfolio #portfolio-filters {
+    padding: 0;
+    margin: 5px 0 70px 0;
+    list-style: none;
+    text-align: center;
+}
+#portfolio #portfolio-filters li {
+    cursor: pointer;
+    margin: 15px 15px 15px 0;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #a4a4a4;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    transition: all 0.3s ease-in-out;
+}
+#portfolio #portfolio-filters li:hover,
+#portfolio #portfolio-filters li.filter-active {
+    color: #FF0036;
+}
+#portfolio .gallery_product{
+    /*border: 2px solid;*/
+
+}
+#portfolio .gallery_product img{
+    width: 100%;
+}
+
+#portfolio .box1{
+    width: 29%;
+    height: 250px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    background-color: #1c7430;
+}
+#portfolio .box2{
+    width: 21%;
+    height: 250px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    background-color: #0b2e13;
+
 }
