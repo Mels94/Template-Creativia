@@ -6,9 +6,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 /*=====================header====================*/
 #header .bg-dark {
-    /*background-color: #000000 !important;*/
+    background-color: #000000 !important;
 }
-
+#nav-menu-container .custom-toggler {
+    padding: 13px;
+    border-left: 1px solid #a4a4a4;
+}
+#nav-menu-container .custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(164,164,164, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
 .octagonWrap {
     width:250px;
     height:250px;
@@ -141,9 +147,6 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff;
     padding: 10px 40px;
 }
-#demo .carousel-item .row .btn1.active{
-    background-color: #FF0036;
-}
 #demo .carousel-item .row .btn1:hover{
     background-color: #FF0036;
 }
@@ -151,7 +154,6 @@ h1, h2, h3, h4, h5, h6 {
 /*=========================About creativia=======================*/
 #about_creativia{
     padding: 70px 0;
-    /*background-color: #fff3cd;*/
 }
 #about_creativia header h3{
     font-weight: 700;
@@ -192,9 +194,6 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     background-color: #1c7430;
     clip-path: polygon(55% 0, 24% 50%, 55% 100%, 33% 100%, 1% 50%, 32% 0%);
-    /*background-image: url(../images/Layer_8.png);*/
-    /*background-size: 100% 100%;*/
-    /*background-repeat: no-repeat;*/
     margin-top: 20px;
     z-index: 3;
 }
@@ -219,8 +218,6 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #1c7430;
     clip-path: polygon(70% 0%, 100% 50%, 70% 100%, 46% 100%, 77% 50%, 46% 0);
     background-image: url(../images/Layer_9.png);
-    /*background-size: 100% 100%;*/
-    /*background-repeat: no-repeat;*/
     margin-top: 20px;
     z-index: 4;
     margin-left: 45%;
@@ -239,7 +236,6 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     bottom: auto;
 }
-
 #accordion_img .hexa{
     width: 72%;
     height: 340px;
@@ -327,56 +323,14 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /*=========================Portfolio=======================*/
-#portfolio{
-    padding: 70px 0;
-    background-color: #fff3cd;
+#portfolio .container{
+    background-color: #262626;
+    padding: 70px 14px;
 }
 #portfolio header h3{
     font-weight: 700;
-    /*color: #fff;*/
+    color: #fff;
 }
-/*
-#portfolio #portfolio-flters {
-    padding: 0;
-    margin: 5px 0 70px 0;
-    list-style: none;
-    text-align: center;
-}
-#portfolio #portfolio-flters li {
-    cursor: pointer;
-    margin: 15px 15px 15px 0;
-    display: inline-block;
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 20px;
-    color: #a4a4a4;
-    text-transform: uppercase;
-    margin-bottom: 5px;
-    transition: all 0.3s ease-in-out;
-}
-#portfolio #portfolio-flters li:hover,
-#portfolio #portfolio-flters li.filter-active {
-    color: #FF0036;
-}
-#portfolio .portfolio-wrap {
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
-    transition: 0.3s;
-}
-#portfolio .portfolio-wrap:hover {
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.16);
-}
-#portfolio .portfolio-item figure {
-    background: #000;
-    overflow: hidden;
-    height: 240px;
-    position: relative;
-    border-radius: 4px 4px 0 0;
-    margin: 0;
-}
-#portfolio .portfolio-item figure:hover img {
-    opacity: 0.4;
-    transition: 0.3s;
-}*/
 #portfolio #portfolio-filters {
     padding: 0;
     margin: 5px 0 70px 0;
@@ -396,27 +350,216 @@ h1, h2, h3, h4, h5, h6 {
     transition: all 0.3s ease-in-out;
 }
 #portfolio #portfolio-filters li:hover,
-#portfolio #portfolio-filters li.filter-active {
+#portfolio #portfolio-filters li.active {
     color: #FF0036;
 }
-#portfolio .gallery_product{
-    /*border: 2px solid;*/
-
-}
-#portfolio .gallery_product img{
-    width: 100%;
-}
-
 #portfolio .box1{
-    width: 29%;
-    height: 250px;
+    width: 28%;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    background-color: #1c7430;
 }
 #portfolio .box2{
-    width: 21%;
-    height: 250px;
+    width: 22%;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    background-color: #0b2e13;
-
+}
+#portfolio .gallery_product:nth-child(1){
+    background-color: #F39943;
+}
+#portfolio .gallery_product:nth-child(2){
+    background-color: #4481A9;
+}
+#portfolio .gallery_product:nth-child(3){
+    background-color: #EF5D88;
+}
+#portfolio .gallery_product:nth-child(4){
+    background-color: #F6F0E0;
+}
+#portfolio .gallery_product:nth-child(5){
+    background-color: #56CC82;
+}
+#portfolio .gallery_product:nth-child(6){
+    background-color: #95A5A5;
+}
+#portfolio .gallery_product:nth-child(7){
+    background-color: #24B0C9;
+}
+#portfolio .gallery_product:nth-child(8){
+    background-color: #FA8562;
+}
+#portfolio .gallery_product{
+    position: relative;
+}
+.hovereffect {
+    width: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+}
+.hovereffect .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.9);
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transform: translate(460px, -100px) rotate(180deg);
+    -ms-transform: translate(460px, -100px) rotate(180deg);
+    transform: translate(460px, -100px) rotate(180deg);
+    -webkit-transition: all 0.2s 0.4s ease-in-out;
+    transition: all 0.2s 0.4s ease-in-out;
+}
+.hovereffect .img_section {
+    width: 100%;
+    display: block;
+    position: relative;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+.box1 .overlay .img_overlay {
+    position: relative;
+    margin-top: 22%;
+}
+.box2 .overlay .img_overlay {
+    position: relative;
+    margin-top: 28%;
+}
+.hovereffect p.info {
+    color: #fff;
+    background-color: transparent;
+    -webkit-transform: translateY(-200px);
+    -ms-transform: translateY(-200px);
+    transform: translateY(-200px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.hovereffect:hover .overlay {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    -webkit-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+}
+.hovereffect .overlay:hover .img_overlay {
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+}
+.hovereffect:hover p.info {
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+#portfolio .line{
+    width: 514px;
+    height: 2px;
+    background-color: #FF0036;
+}
+#portfolio .line_hr .line img{
+    position: absolute;
+    margin: -11px 0 0 -10px;
+}
+/*===================Our product features=================*/
+#product_features{
+    padding: 70px 0;
+}
+#product_features header h3{
+    font-weight: 700;
+}
+#product_features header h3:last-child{
+    color: #FF0036;
+}
+#product_features header p{
+    font-weight: 600;
+    margin: 20px 0 70px 0;
+}
+#product_features .left_sectia{
+    margin-top: 50px;
+}
+#product_features .right_sectia{
+    margin-top: 50px;
+}
+#product_features .sectia{
+    border: 1px solid;
+}
+#product_features .sectia span{
+    text-transform: uppercase;
+    font-size: 19px;
+    font-weight: 500;
+    margin-top: 3px;
+}
+#product_features .sectia .sectia_hex{
+    width: 12%;
+    height: 36px;
+    clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+    margin: 0 15px;
+    background-color: #E7E7E7;
+    background-image: url("../images/1_copy.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#product_features .sectia:hover{
+    background-color: #FF0036;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+}
+#product_features .sectia:hover .sectia_hex{
+    background-image: url("../images/1_copy_red.png");
+}
+#product_features .phone {
+    width: 91%;
+    height: 360px;
+    background-color: #D8D8D8;
+    top: 0;
+    left: 17px;
+    position: absolute;
+    border-radius: 25px 25px 0 0;
+    background-image: url("../images/Replace_Me_1.png");
+    background-size: 92% 86%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+#product_features .phone .phone_camera {
+    width: 3px;
+    height: 3px;
+    background-color: black;
+    margin: 23px auto;
+    border-radius: 50%;
+}
+#product_features .trapezoid1{
+    width: 130%;
+    height: 180px;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 100%, 0% 100%);
+    background-color: #494949;
+    margin-top: 180px;
+    margin-left: -15%;
+}
+#product_features .trapezoid2{
+    width: 130%;
+    height: 180px;
+    clip-path: polygon(0 0, 100% 0, 75% 100%, 25% 100%);
+    background-color: #262626;
+    margin-left: -15%;
+}
+#product_features .trapezoid2 .btn3{
+    background-color: #494949;
+    border: none;
+    border-radius: 0;
+    font-size: 22px;
+    color: #fff;
+    padding: 10px 40px;
+    margin-top: 60px;
+}
+#product_features .trapezoid2 .btn3:hover{
+    background-color: #FF0036;
 }
