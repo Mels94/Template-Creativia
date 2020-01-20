@@ -165,6 +165,9 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
     margin: 20px 0 70px 0;
 }
+#about_creativia header p span{
+    color: #FF0036;
+}
 .accordion .card-header:after {
     font-family: 'FontAwesome', sans-serif;
     content: "\f068";
@@ -459,12 +462,12 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-transition-delay: 0.3s;
     transition-delay: 0.3s;
 }
-#portfolio .line{
+.line{
     width: 514px;
     height: 2px;
     background-color: #FF0036;
 }
-#portfolio .line_hr .line img{
+.line_hr .line img{
     position: absolute;
     margin: -11px 0 0 -10px;
 }
@@ -482,6 +485,9 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
     margin: 20px 0 70px 0;
 }
+#product_features header p span{
+    color: #FF0036;
+}
 #product_features .left_sectia{
     margin-top: 50px;
 }
@@ -489,7 +495,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 50px;
 }
 #product_features .sectia{
-    border: 1px solid;
+    border: 1px solid #D8D8D8;
 }
 #product_features .sectia span{
     text-transform: uppercase;
@@ -515,6 +521,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #product_features .sectia:hover .sectia_hex{
     background-image: url("../images/1_copy_red.png");
+    background-color: #fff;
 }
 #product_features .phone {
     width: 91%;
@@ -562,4 +569,122 @@ h1, h2, h3, h4, h5, h6 {
 }
 #product_features .trapezoid2 .btn3:hover{
     background-color: #FF0036;
+}
+
+
+/*=========================Our clients=======================*/
+#clients{
+    padding: 70px 0;
+    background-color: #fff3cd;
+}
+#clients .container{
+    padding: 70px 14px;
+    background-image: url("../images/business-group-m.png");
+    background-position: center;
+    background-size: 100% 100%;
+    position: relative;
+}
+#clients .container::before {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: auto;
+}
+#clients_title{
+    opacity: 0.9;
+}
+#clients header h3{
+    font-weight: 700;
+}
+#clients header h3:first-child{
+    color: #fff;
+}
+#clients header h3:last-child{
+    color: #FF0036;
+}
+#clients header p{
+    font-weight: 600;
+    margin: 20px 0 70px 0;
+    color: #a4a4a4
+}
+#clients header p span{
+    color: #FFF;
+}
+#clients .clients_say h5{
+    color: #fff;
+}
+#clients .clients_say p{
+    color: #a4a4a4;
+}
+#clients #carouselExampleIndicators .hexagon_sm{
+    width: 10%;
+    height: 50px;
+    clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+    background-color: #1c7430;
+    margin: 10px auto;
+}
+#clients #carouselExampleIndicators .carousel-item span{
+    color: #FF0036;
+    font-size: 12px;
+    font-weight: 700;
+}
+#clients #carouselExampleIndicators .carousel-indicators li{
+    width: 8px;
+    height: 8px;
+    opacity: 1;
+}
+#clients #carouselExampleIndicators .carousel-indicators li.active{
+    background-color: #FF0036;
+}
+#clients #carouselExampleIndicators .hexagon_sm .img1{
+    width: 200%;
+    margin: -12px 0 0 -17px;
+}
+#clients #carouselExampleIndicators .hexagon_sm .img2{
+    width: 140%;
+    margin: -3px 0 0 -14px;
+}
+#clients #carouselExampleIndicators .hexagon_sm .img3{
+    width: 170%;
+    margin: -3px 0 0 -25px;
+}
+#clients #carouselExampleIndicators .carousel-inner{
+    margin-bottom: 40px;
+}
+#clients #carouselExampleIndicators .carousel-indicators{
+    top: 100px;
+}
+#clients .div_clints{
+    width: 250px;
+    height: 100px;
+    background-color: #D8D8D8;
+    box-shadow: 0 0 15px 0 inset;
+    margin-bottom: 25px;
+}
+#clients .div_clints .div_img_span{
+    margin-top: 36px;
+}
+#clients .div_clints .div_img_span span{
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+#clients .div_clints .div_clints_img{
+    width: 8%;
+    height: 20px;
+    background-color: #0c5460;
+    margin: 4px 6px 0 0;
+}
+#clients .div_clints .div_clints_img .img1{
+     width: 28px;
+     margin-left: -9px;
+}
+#clients .div_clints .div_clints_img .img2{
+    width: 28px;
+    margin: -7px 0 0 -3px;
 }
