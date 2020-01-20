@@ -473,7 +473,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 /*===================Our product features=================*/
 #product_features{
-    padding: 70px 0;
+    padding: 90px 0;
 }
 #product_features header h3{
     font-weight: 700;
@@ -573,10 +573,6 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /*=========================Our clients=======================*/
-#clients{
-    padding: 70px 0;
-    background-color: #fff3cd;
-}
 #clients .container{
     padding: 70px 14px;
     background-image: url("../images/business-group-m.png");
@@ -608,12 +604,13 @@ h1, h2, h3, h4, h5, h6 {
     color: #FF0036;
 }
 #clients header p{
-    font-weight: 600;
+    font-weight: 800;
     margin: 20px 0 70px 0;
     color: #a4a4a4
 }
 #clients header p span{
-    color: #FFF;
+    font-weight: 600;
+    color: #FF0036;
 }
 #clients .clients_say h5{
     color: #fff;
@@ -687,4 +684,86 @@ h1, h2, h3, h4, h5, h6 {
 #clients .div_clints .div_clints_img .img2{
     width: 28px;
     margin: -7px 0 0 -3px;
+}
+
+/*=====================Our teamwork===================*/
+#team{
+    padding: 90px 0;
+    background-color: #ffeeba;
+}
+#team .container{
+    background-color: #ffdf7e;
+}
+#team header h3{
+    font-weight: 700;
+}
+#team header h3:last-child{
+    color: #FF0036;
+}
+#team header p{
+    font-weight: 600;
+    margin: 20px 0 70px 0;
+}
+#team header p span{
+    color: #FF0036;
+}
+#team .webdesigner{
+    width: 100%;
+    height: 220px;
+    background-color: #0b2e13;
+}
+#team .webdesigner img{
+    width: 100%;
+    height: 100%;
+}
+#team .designer_title{
+    border: 1px solid #D8D8D8;
+    padding: 27px 0 6px 0;
+}
+#team .team_designer .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 16px;
+    right: 0;
+    height: 68%;
+    width: 89%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #262626;
+}
+#team .team_designer:hover .overlay {
+    opacity: 1;
+}
+#team .team_designer:hover .designer_title{
+    border: 1px solid;
+}
+#team .team_designer:hover .designer_title h5{
+    color: #FF0036;
+}
+#team .team_designer .hexagon_icon{
+    width: 15%;
+    height: 35px;
+    clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+    background-color: #fff;
+    margin: 90px 5px;
+    cursor: pointer;
+}
+#team .team_designer .hexagon_icon i{
+    margin-top: 10px;
+    color: #FF0036;
+}
+#team .team_designer .img_google{
+    background-image: url("../images/G+_Icon.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#team .team_designer .hexagon_icon:hover{
+    background-color: #FF0036;
+}
+#team .team_designer .hexagon_icon:hover i{
+    color: #fff;
+}
+#team .team_designer .img_google:hover{
+    background-image: url("../images/G+_Icon_white.png");
 }
