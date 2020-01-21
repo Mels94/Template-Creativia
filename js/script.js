@@ -17,21 +17,35 @@ $(document).ready(function(){
             $(this).addClass('active');
         }
 
-/*        if ($(this).attr('data-filter') === 'filter-illustration' || 'filter-digital' || 'filter-web') {
-
-            //console.log($('.gallery_product').filter('.filter-illustration'));
-            $('.gallery_product').filter('.filter-illustration').css('height', '204px');
-            $('.gallery_product').filter('.filter-digital').css('height', '204px');
-            $('.gallery_product').filter('.filter-web').css('height', '204px');
-            //$('#portfolio .box2').attr('class','filter-illustration').css('height', '100%');
-
-        }
-        if ($(this).attr('data-filter') === 'all') {
-            $('.gallery_product').css('height', '50%');
-        }*/
-
     });
 
+
+    function animateElements() {
+        $('.progressbar').each(function() {
+            var elementPos = $(this).offset().top;
+            var topOfWindow = $(window).scrollTop();
+            var percent = $(this).find('.circle').attr('data-percent');
+            var percentage = parseInt(percent, 10) / parseInt(100, 10);
+            var animate = $(this).data('animate');
+            if (elementPos < topOfWindow + $(window).height() - 30 && !animate) {
+                $(this).data('animate', true);
+                $(this).find('.circle').circleProgress({
+                    startAngle: -Math.PI / 2,
+                    value: percent / 100,
+                    thickness: 3,
+                    fill: {
+                        color: '#FF0036'
+                    }
+                }).on('circle-animation-progress', function(event, progress, stepValue) {
+                    $(this).find('div').text((stepValue * 100).toFixed(0) + "%");
+                }).stop();
+            }
+        });
+    }
+
+    // Show animated elements
+    animateElements();
+    $(window).scroll(animateElements);
 
 
 });
