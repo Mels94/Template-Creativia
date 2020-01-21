@@ -844,3 +844,87 @@ h1, h2, h3, h4, h5, h6 {
 #skills .progressbar p{
     font-size: 13px;
 }
+
+/*====================Our services==================*/
+#services .container{
+    padding: 90px 50px 50px 50px;
+    background-color: #272727;
+}
+#services header h3{
+    font-weight: 700;
+}
+#services header h3:first-child{
+    color: #fff;
+}
+#services header h3:last-child{
+    color: #FF0036;
+}
+#services header p{
+    font-weight: 600;
+    margin: 20px 0 70px 0;
+    font-size: 13px;
+    color: #A4A4A4;
+}
+#services header p span{
+    color: #FF0036;
+}
+#services .hexagon_services{
+    width: 58px;
+    height: 52px;
+    clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+    background-color: #A4A4A4;
+    cursor: pointer;
+}
+#services .services_item span{
+    margin: 12px 0 0 25px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+}
+#services .services_info{
+    padding: 28px;
+    margin: 20px 0 50px 0;
+    background-color: #343434;
+}
+#services .services_info p{
+    text-align: justify;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 0;
+    color: #A4A4A4;
+}
+#services .hexagon_services i{
+     font-size: 28px;
+     color: #262626;
+}
+#services .hexagon_services .code{
+    margin: 11px 0 0 13px;
+}
+#services .hexagon_services .html_css{
+    margin: 11px 0 0 18px;
+}
+#services .hexagon_services .wordpress{
+    margin: 11px 0 0 15px;
+}
+#services .hexagon_services .mobile{
+    margin: 7px 0 0 20px;
+    font-size: 38px;
+}
+#services .hexagon_services .pencel{
+    margin: 10px 0 0 16px;
+}
+#services .hexagon_services .responcive1{
+    margin: 10px 0 0 16px;
+}
+#services .services_item:hover .hexagon_services{
+    background-color: #FF0036;
+}
+#services .services_item:hover .hexagon_services i{
+    color: #fff;
+}
+#services .services_item:hover .services_info{
+    background-color: #272727;
+}
+#services .services_item:hover .services_info p{
+    color: #fff;
+}
