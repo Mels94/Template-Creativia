@@ -1,5 +1,6 @@
+
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Raleway", sans-serif;
     font-weight: 400;
     margin: 0 0 20px 0;
     padding: 0;
@@ -273,6 +274,9 @@ h1, h2, h3, h4, h5, h6 {
     background-color: black;
     clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
 }
+.hex_4 .poligon:hover{
+    background-color: #FF0036;
+}
 .hex_4 .poligon::before {
     content: "";
     display: block;
@@ -283,7 +287,6 @@ h1, h2, h3, h4, h5, h6 {
     width: 91px;
     clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
     background-color: #fff;
-    /*background-image: url("../images/4_4.png");*/
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -906,15 +909,15 @@ h1, h2, h3, h4, h5, h6 {
 #services .hexagon_services .wordpress{
     margin: 11px 0 0 15px;
 }
-#services .hexagon_services .mobile{
-    margin: 7px 0 0 20px;
+#services .hexagon_services .tablet{
+    margin: 7px 0 0 16px;
     font-size: 38px;
 }
 #services .hexagon_services .pencel{
     margin: 10px 0 0 16px;
 }
-#services .hexagon_services .responcive1{
-    margin: 10px 0 0 16px;
+#services .hexagon_services .laptop{
+    margin: 10px 0 0 14px;
 }
 #services .services_item:hover .hexagon_services{
     background-color: #FF0036;
@@ -923,8 +926,191 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff;
 }
 #services .services_item:hover .services_info{
-    background-color: #272727;
+    background-color: #3D2329;
 }
 #services .services_item:hover .services_info p{
     color: #fff;
+}
+
+
+/*====================Plans Bestseller==================*/
+#bestseller{
+    padding: 90px 0;
+}
+#bestseller .container{
+    padding: 0 40px;
+}
+#bestseller header h3{
+    font-weight: 700;
+}
+#bestseller header h3:last-child{
+    color: #FF0036;
+}
+#bestseller header p{
+    font-weight: 600;
+    margin: 20px 0 70px 0;
+    font-size: 13px;
+}
+#bestseller header p span{
+    color: #FF0036;
+}
+#bestseller .bestseller_reseller{
+    width: 100%;
+    height: 35px;
+    background-color: #262626;
+}
+#bestseller .bestseller_reseller h6{
+    padding: 9px 0 8px 0;
+    color: #fff;
+}
+#bestseller .bestseller_value{
+    width: 100%;
+    background-color: #F2F2F2;
+}
+#bestseller .bestseller_value span{
+    font-size: 40px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+#bestseller .bestseller_value span sub{
+    font-size: 14px;
+    bottom: 0;
+}
+#bestseller .bestseller_info p{
+    border: 1px solid #D8D8D8;
+    border-bottom: 0;
+    padding: 10px 7px;
+    margin-bottom: 0;
+    font-size: 12px;
+}
+#bestseller .btn1{
+    border: 1px solid #D8D8D8;
+    padding: 15px;
+}
+#bestseller .btn1 button{
+    background-color: #262626;
+    color: #fff;
+    padding: 2px 35px;
+    border: none;
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+}
+#bestseller .bestseller_item{
+    width: 220px;
+}
+#bestseller .bestseller_item:hover .bestseller_value,
+#bestseller .bestseller_item:hover .btn1 button{
+    background-color: #FF0036;
+}
+#bestseller .bestseller_item:hover .bestseller_value span{
+    color: #fff;
+}
+
+/*=======================Twitter=====================*/
+#twitter .container{
+    background-color: #272727;
+    padding: 60px 0;
+}
+#twitter .twitter_big{
+    position: absolute;
+    font-size: 162px;
+    transform: rotate(-25deg);
+    margin-left: 22px;
+    color: #3D3D3D;
+}
+#twitter .div_content{
+    padding: 0 230px;
+}
+#twitter .twitter_small{
+    font-size: 35px;
+    color: #FF0036;
+}
+#twitter .div_content p{
+    font-size: 14px;
+    color: #fff;
+}
+
+/*=======================Our Blog=====================*/
+#blog{
+    padding: 90px 0 60px 0;
+}
+#blog header h3{
+    font-weight: 700;
+}
+#blog header h3:last-child{
+    color: #FF0036;
+}
+#blog header p{
+    font-weight: 600;
+    margin: 20px 0 70px 0;
+    font-size: 13px;
+}
+#blog header p span{
+    color: #FF0036;
+}
+#blog .blog_img1{
+    background-color: #56CA7F;
+    width: 80%;
+    height: 189px;
+    background-image: url("../images/Layer_23.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+#blog .blog_img2{
+    width: 80%;
+    height: 189px;
+    background-image: url("../images/Layer_24.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+#blog .blog_img1:hover{
+    opacity: 0.5;
+}
+#blog .blog_img2:hover{
+    opacity: 0.5;
+}
+#blog .admin_content{
+    width: 80%;
+}
+#blog .admin_content h6{
+    margin-bottom: 0;
+    font-weight: 600;
+}
+#blog .admin_content .admin_icon{
+    padding: 9px 0;
+}
+#blog .admin_content .admin_icon i{
+    color: #A2A2A2;
+    font-size: 14px;
+}
+#blog .admin_content p{
+    font-size: 14px;
+    padding-bottom: 15px;
+    text-align: justify;
+}
+#blog .admin_content button{
+    padding: 6px 10px;
+    background-color: #262626;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+}
+#blog .admin_content button:hover{
+    background-color: #FF0036;
+}
+#blog .chevron-down{
+    margin-top: 25px;
+}
+#blog .down{
+    width: 35px;
+    height: 35px;
+    background-color: #F2F2F2;
+    border-radius: 50%;
+}
+#blog .down i{
+    font-size: 24px;
+    margin: 4px 0 0 6px;
+    color: #A2A2A2;
 }
