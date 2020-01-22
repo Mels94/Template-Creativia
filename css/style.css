@@ -1035,8 +1035,8 @@ h1, h2, h3, h4, h5, h6 {
     padding: 90px 0 60px 0;
 }
 #blog header h3{
-    font-weight: 700;
-}
+     font-weight: 700;
+ }
 #blog header h3:last-child{
     color: #FF0036;
 }
@@ -1113,4 +1113,120 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 24px;
     margin: 4px 0 0 6px;
     color: #A2A2A2;
+}
+
+/*===================Follow Creativia===============*/
+#follow_creativia .container{
+    padding: 80px 0;
+    background-image: url("../images/photodune-woman-in-red-mee.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 168%;
+    position: relative;
+}
+#follow_creativia .container::before {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: auto;
+}
+#follow_creativia header{
+    opacity: 0.9;
+}
+#follow_creativia header h3{
+    font-weight: 700;
+    margin-bottom: 28px;
+}
+#follow_creativia header h3:first-child{
+    color: #fff;
+}
+#follow_creativia header h3:last-child{
+    color: #FF0036;
+}
+
+#follow_creativia .hexagon_follow {
+    position: relative;
+    width: 70px;
+    height: 40.41px;
+    background-color: rgba(0,0,0,0);
+    margin: 20.21px 0;
+    border-left: solid 1px #ff0036;
+    border-right: solid 1px #ff0036;
+    transform: rotate(-30deg);
+    margin-bottom: 40px;
+}
+#follow_creativia .hexagon_follow:before,
+#follow_creativia .hexagon_follow:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 49.50px;
+    height: 49.50px;
+    -webkit-transform: scaleY(0.5774) rotate(-45deg);
+    -ms-transform: scaleY(0.5774) rotate(-45deg);
+    transform: scaleY(0.5774) rotate(-45deg);
+    background-color: inherit;
+    left: 9.2513px;
+}
+#follow_creativia .hexagon_follow:before {
+    top: -24.7487px;
+    border-top: solid 1.4142px #ff0036;
+    border-right: solid 1.4142px #ff0036;
+}
+#follow_creativia .hexagon_follow:after {
+    bottom: -24.7487px;
+    border-bottom: solid 1.4142px #ff0036;
+    border-left: solid 1.4142px #ff0036;
+}
+
+#follow_creativia .hex_div_4 .blog_col1{
+    padding-right: 0;
+}
+#follow_creativia .hex_div_4 .blog_col2{
+    padding-left: 0;
+}
+#follow_creativia .blog_col1 .hex_margin1{
+    margin-right: 12%;
+}
+#follow_creativia .blog_col1 .hex_margin2{
+    margin-right: 6%;
+}
+#follow_creativia .blog_col2 .hex_margin3{
+    margin-left: 6%;
+}
+#follow_creativia .blog_col2 .hex_margin4{
+    margin-left: 12%;
+}
+#follow_creativia .blog_col1 i{
+    position: absolute;
+    font-size: 20px;
+    margin: -69px 0 0 26px;
+    color: #ff0036;
+}
+#follow_creativia .blog_col1 span{
+    margin-left: 10px;
+    font-weight: 500;
+    color: #fff;
+}
+#follow_creativia .blog_col2 i{
+    position: absolute;
+    font-size: 20px;
+    margin: -69px 0 0 32px;
+    color: #ff0036;
+}
+#follow_creativia .blog_col2 span{
+    margin-left: 23px;
+    font-weight: 500;
+    color: #fff;
+}
+#follow_creativia .hex_hover:hover .hexagon_follow{
+    background-color: #ff0036;
+}
+#follow_creativia .hex_hover:hover i{
+    color: #fff;
 }
