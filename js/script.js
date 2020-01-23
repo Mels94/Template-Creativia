@@ -48,4 +48,8 @@ $(document).ready(function(){
     $(window).scroll(animateElements);
 
 
+    $("#formButton").click(function() {
+        $("#form1").toggle();
+    });
+
 });

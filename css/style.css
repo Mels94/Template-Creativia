@@ -729,7 +729,7 @@ h1, h2, h3, h4, h5, h6 {
     bottom: 0;
     left: 16px;
     right: 0;
-    height: 68%;
+    height: 66%;
     width: 89%;
     opacity: 0;
     transition: .5s ease;
@@ -1229,4 +1229,71 @@ h1, h2, h3, h4, h5, h6 {
 }
 #follow_creativia .hex_hover:hover i{
     color: #fff;
+}
+
+/*=======================Fine us here=====================*/
+#fine_us_here{
+    padding-top: 90px;
+}
+#fine_us_here .container{
+    padding: 0;
+}
+#fine_us_here header h3{
+    font-weight: 700;
+}
+#fine_us_here header h3:last-child{
+    color: #FF0036;
+}
+#fine_us_here header p{
+    font-weight: 600;
+    margin: 20px 0 70px 0;
+    font-size: 13px;
+}
+#fine_us_here header p span{
+    color: #FF0036;
+}
+#fine_us_here .mapouter{
+    width: 100%;
+    height: 440px;
+}
+
+#fine_us_here #formButton{
+    position: absolute;
+    margin-left: -8%;
+    margin-top: -43px;
+}
+#fine_us_here .send_message{
+    margin-top: -401px;
+    margin-right: 28%;
+}
+#fine_us_here form{
+    width: 280px;
+    background-color: #fff;
+    display: none;
+    padding: 25px;
+}
+#fine_us_here #submit{
+    margin-left: 123px;
+    padding: 5px 25px;
+    background-color: #262626;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+}
+
+/*===============Footer===========*/
+footer{
+    width: 100%;
+    height: 60px;
+    background-color: #262626;
+}
+#footer img{
+    margin-top: 17px;
+}
+#footer span{
+    display: flex;
+    justify-content: flex-end;
+    margin: -19px 30px 0 0;
+    font-size: 13px;
+    color: #a4a4a4;
 }
