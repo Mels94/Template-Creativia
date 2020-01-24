@@ -52,4 +52,25 @@ $(document).ready(function(){
         $("#form1").toggle();
     });
 
+
+
+
+    $('.card-header').click(function () {
+        if (!$(this).hasClass('active')) {
+            $('.card-header').removeClass('active');
+            $(this).addClass('active');
+            $('.card-header').find('i').removeAttr('class');
+            $('.card-header').find('i').addClass('fa fa-plus');
+            $(this).find('i').addClass('fa fa-minus');
+        }else {
+            $(this).removeClass('active');
+            $(this).find('i').removeAttr('class');
+            $(this).find('i').addClass('fa fa-plus');
+        }
+    })
+
+
+
+
+
 });

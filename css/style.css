@@ -170,14 +170,24 @@ h1, h2, h3, h4, h5, h6 {
 #about_creativia header p span{
     color: #FF0036;
 }
-.accordion .card-header:after {
-    font-family: 'FontAwesome', sans-serif;
-    content: "\f068";
-    float: left;
-    margin-right: 45px;
+.accordion .card .card-header {
+    padding: 0;
+    cursor: pointer;
 }
-.accordion .card-header.collapsed:after {
-    content: "\f067";
+.accordion .icon_border{
+    border-right: 1px solid #d8d8d8;
+    padding: 8px 11px;
+}
+.accordion .card_info{
+    padding: 8px 25px;
+}
+.accordion .card .card-header.active a{
+    color: red;
+}
+.accordion .card .card-header i{
+    border: 1px solid;
+    padding: 3px 5px;
+    border-radius: 50%;
 }
 .accordion .card{
     border: 0;
@@ -185,6 +195,9 @@ h1, h2, h3, h4, h5, h6 {
 .accordion .card .card-header{
     border: 1px solid rgba(0,0,0,.125);
     margin-bottom: 10px !important;
+}
+.accordion .card .card-header.active a{
+    color: red;
 }
 .accordion .card .card-body{
     border: 1px solid rgba(0,0,0,.125);
@@ -1257,13 +1270,29 @@ h1, h2, h3, h4, h5, h6 {
     height: 440px;
 }
 
+#fine_us_here .map_address{
+    width: 210px;
+    height: 215px;
+    background-color: #262626;
+    clip-path: polygon(100% 0, 100% 50%, 94% 50%, 79% 65%, 84% 50%, 0 50%, 0 0);
+    position: absolute;
+    margin-top: -220px;
+    margin-left: 200px;
+    padding: 16px;
+}
+#fine_us_here .map_address p{
+    margin-bottom: 0;
+    font-size: 13px;
+    color: #fff;
+}
+
 #fine_us_here #formButton{
     position: absolute;
     margin-left: -8%;
     margin-top: -43px;
 }
 #fine_us_here .send_message{
-    margin-top: -401px;
+    margin-top: -404px;
     margin-right: 28%;
 }
 #fine_us_here form{
@@ -1297,3 +1326,5 @@ footer{
     font-size: 13px;
     color: #a4a4a4;
 }
+
+
