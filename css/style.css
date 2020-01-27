@@ -2,7 +2,7 @@
 h1, h2, h3, h4, h5, h6 {
     font-family: "Raleway", sans-serif;
     font-weight: 400;
-    margin: 0 0 20px 0;
+    margin: 0 0 1vw 0;
     padding: 0;
 }
 /*=====================header====================*/
@@ -111,7 +111,7 @@ h1, h2, h3, h4, h5, h6 {
     color: red;
 }
 #demo i{
-    font-size: 25px;
+    font-size: 1.5vw;
 }
 #intro .carousel-item::before {
     content: '';
@@ -127,29 +127,37 @@ h1, h2, h3, h4, h5, h6 {
 #demo .carousel-item .row{
     position: absolute;
     top: 0;
-    left: 250px;
-    right: 250px;
+    left: 9vw;
+    right: 9vw;
 }
 #demo .carousel-item .row h2:first-child{
     color: #fff;
+    font-size: 2vw;
 }
 #demo .carousel-item .row h2:last-child{
     color: #FF0036;
+    font-size: 2vw;
 }
 #demo .carousel-item .row p{
-    padding: 30px 0;
+    padding: 2vw 0;
     color: #fff;
+    font-size:1vw;
+    margin-bottom: 1vw;
 }
 #demo .carousel-item .row .btn1{
     background-color: #131313;
     border: none;
     border-radius: 0;
-    font-size: 22px;
+    font-size: 1.5vw;
     color: #fff;
-    padding: 10px 40px;
+    padding: 0.7vw 3vw;
 }
 #demo .carousel-item .row .btn1:hover{
     background-color: #FF0036;
+}
+#demo .carousel-control-prev,
+#demo .carousel-control-next{
+    width: 6vw;
 }
 
 /*=========================About creativia=======================*/
@@ -211,12 +219,12 @@ h1, h2, h3, h4, h5, h6 {
     height: 300px;
     position: absolute;
     background-color: #1c7430;
-    clip-path: polygon(55% 0, 24% 50%, 55% 100%, 33% 100%, 1% 50%, 32% 0%);
-    margin-top: 20px;
+    clip-path: polygon(56% 0, 25% 50%, 56% 100%, 33% 100%, 1% 50%, 32% 0%);
+    margin: 20px 0 0 -23%;
     z-index: 3;
-}
-#about_creativia .left-img img{
-    margin-left: -60px;
+    background-image: url("../images/Layer_88.png");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 #about_creativia .left-img::before {
     content: '';
@@ -234,18 +242,16 @@ h1, h2, h3, h4, h5, h6 {
     height: 300px;
     position: absolute;
     background-color: #1c7430;
-    clip-path: polygon(70% 0%, 100% 50%, 70% 100%, 46% 100%, 77% 50%, 46% 0);
-    background-image: url(../images/Layer_9.png);
-    margin-top: 20px;
+    clip-path: polygon(69% 0%, 99% 50%, 69% 100%, 44% 100%, 75% 50%, 44% 0);
+    margin: 20px 0 0 23%;
     z-index: 4;
-    margin-left: 45%;
-}
-#about_creativia .right-img img{
-    margin: -130px 0 0 -106px;
+    background-image: url("../images/Layer_99.png");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 #about_creativia .right-img::before {
     content: '';
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.3);
     position: absolute;
     height: 100%;
     width: 100%;
@@ -257,10 +263,12 @@ h1, h2, h3, h4, h5, h6 {
 #accordion_img .hexa{
     width: 72%;
     height: 340px;
+    background-color: #1e7e34;
     clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
-    margin-left: 14%;
+    background-image: url("../images/1_.png");
+    background-repeat: no-repeat;
+    background-position: center;
 }
-
 #about_creativia .line_hr{
     margin: 110px 0;
 }
