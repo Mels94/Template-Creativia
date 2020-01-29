@@ -1,0 +1,52 @@
+{
+  "bestseller": [
+    {
+      "title": "RESELLER",
+      "value": "199$",
+      "data": "year",
+      "info1": "CPU E3.3 1230-3GHz 8MB-V2",
+      "info2": "HARD 500GB SATA 7200 RPM",
+      "info3": "RAM 8GB DDR1333 3MHZ ECC",
+      "info4": "Traffic 10 TB",
+      "info5": "Connection 100 MB",
+      "info6": "5IP",
+      "btn": "ORDER NOW"
+    },
+    {
+      "title": "RESELLER",
+      "value": "199$",
+      "data": "year",
+      "info1": "CPU E3.3 1230-3GHz 8MB-V2",
+      "info2": "HARD 500GB SATA 7200 RPM",
+      "info3": "RAM 8GB DDR1333 3MHZ ECC",
+      "info4": "Traffic 10 TB",
+      "info5": "Connection 100 MB",
+      "info6": "5IP",
+      "btn": "ORDER NOW"
+    },
+    {
+      "title": "RESELLER",
+      "value": "199$",
+      "data": "year",
+      "info1": "CPU E3.3 1230-3GHz 8MB-V2",
+      "info2": "HARD 500GB SATA 7200 RPM",
+      "info3": "RAM 8GB DDR1333 3MHZ ECC",
+      "info4": "Traffic 10 TB",
+      "info5": "Connection 100 MB",
+      "info6": "5IP",
+      "btn": "ORDER NOW"
+    },
+    {
+      "title": "RESELLER",
+      "value": "199$",
+      "data": "year",
+      "info1": "CPU E3.3 1230-3GHz 8MB-V2",
+      "info2": "HARD 500GB SATA 7200 RPM",
+      "info3": "RAM 8GB DDR1333 3MHZ ECC",
+      "info4": "Traffic 10 TB",
+      "info5": "Connection 100 MB",
+      "info6": "5IP",
+      "btn": "ORDER NOW"
+    }
+  ]
+}

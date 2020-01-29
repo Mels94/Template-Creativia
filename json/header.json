@@ -1,0 +1,16 @@
+{
+  "header": [
+    {
+      "img": "images/Creativia.png",
+      "home": "Home",
+      "about": "About&#160;Us",
+      "portfolio": "Portfolio",
+      "clients": "Clients",
+      "team": "Team",
+      "services": "Services",
+      "blog": "Blog",
+      "contact": "Contact"
+    }
+  ]
+}
+
