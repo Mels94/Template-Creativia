@@ -1069,27 +1069,15 @@ h1, h2, h3, h4, h5, h6 {
 #blog header p span{
     color: #FF0036;
 }
-#blog .blog_img1{
+#blog .blog_img{
     background-color: #56CA7F;
-    width: 80%;
+    width: 278px;
     height: 189px;
-    background-image: url("../images/Layer_23.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
 }
-#blog .blog_img2{
-    width: 80%;
-    height: 189px;
-    background-image: url("../images/Layer_24.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
+#blog .blog_img img{
+    width: 100%;
 }
-#blog .blog_img1:hover{
-    opacity: 0.5;
-}
-#blog .blog_img2:hover{
+#blog .blog_img:hover{
     opacity: 0.5;
 }
 #blog .admin_content{
@@ -1120,9 +1108,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 #blog .admin_content button:hover{
     background-color: #FF0036;
-}
-#blog .chevron-down{
-    margin-top: 25px;
 }
 #blog .down{
     width: 35px;
