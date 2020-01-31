@@ -1117,7 +1117,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #blog .down i{
     font-size: 24px;
-    margin: 4px 0 0 6px;
+    margin-left: -2px;
     color: #A2A2A2;
 }
 
@@ -1320,4 +1320,6 @@ footer{
     color: #a4a4a4;
 }
 
-
+.hide {
+    display: none;
+}

@@ -42,7 +42,6 @@ $(document).ready(function(){
             }
         });
     }
-
     // Show animated elements
     animateElements();
     $(window).scroll(animateElements);
@@ -51,8 +50,6 @@ $(document).ready(function(){
     $("#formButton").click(function() {
         $("#form1").toggle();
     });
-
-
 
 
     $('.card-header').click(function () {
@@ -68,6 +65,39 @@ $(document).ready(function(){
             $(this).find('i').addClass('fa fa-plus');
         }
     })
+
+
+
+
+    $('#btn_down').on('click', function () {
+
+        console.log($('.blog_row.hide'))
+        $('.blog_row.hide').removeClass('hide').addClass("show")
+
+        // for (let i = 0; i < $('.blog_row').length; i++){
+        //     //console.log(i);
+        //
+        //     if ($('.blog_row')[i].style.display === 'none'){
+        //
+        //         //alert("fghj")
+        //         //$('.blog_row')[i].style;
+        //
+        //         $('.blog_row')[i].style.display === 'none';
+        //
+        //
+        //         console.log($('.blog_row')[i].style.display === 'none');
+        //
+        //     }
+        //
+        //
+        //
+        // }
+
+
+    });
+
+
+
 
 
 

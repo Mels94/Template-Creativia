@@ -95,8 +95,12 @@ $.ajax({
     type: "GET",
     dataType: "json",
     success: function (data) {
-        data.blog.forEach((i) => {
-            $('#blog_container').append(`<div class="row mb-5">
+        data.blog.forEach((i, index) => {
+            console.log(index);
+
+
+            // if (index < 2){
+                $('#blog_container').append(`<div class="row mb-5 blog_row ${index>1? 'hide': ''}">
                 <div class="col-lg-4 col-md-6 col-12 d-flex justify-content-lg-end justify-content-md-end justify-content-sm-start">
                     <div class="blog_img">
                         <img src="${i.img}" alt="${i.alt}">
@@ -115,11 +119,38 @@ $.ajax({
                     </div>
                 </div>
             </div>`);
-        })
+            // } else {
+            //     $('#blog_container').append(`<div class="row mb-5 blog_row hide">
+            //     <div class="col-lg-4 col-md-6 col-12 d-flex justify-content-lg-end justify-content-md-end justify-content-sm-start">
+            //         <div class="blog_img">
+            //             <img src="${i.img}" alt="${i.alt}">
+            //         </div>
+            //     </div>
+            //     <div class="col-lg-8 col-md-6 col-12">
+            //         <div class="admin_content">
+            //             <h6>${i.title}</h6>
+            //             <div class="admin_icon">
+            //                 <i class="${i.icon1}" aria-hidden="true"> ${i.icon1_name}</i>
+            //                 <i class="${i.icon2}" aria-hidden="true"> ${i.icon2_name}</i>
+            //                 <i class="${i.icon3}" aria-hidden="true"> ${i.icon3_name}</i>
+            //             </div>
+            //             <p>${i.info}</p>
+            //             <button type="button">${i.btn}</button>
+            //         </div>
+            //     </div>
+            // </div>`);
+            // }
+
+        });
+
+
+
+
         $('#blog_container').append(`<div class="chevron-down d-flex justify-content-center">
-                                        <div class="down">
+                                        <button class="down" type="button" id="btn_down">
                                             <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                                        </div>
+                                        </button>
                                      </div>`);
+
     }
 });
