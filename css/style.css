@@ -1069,6 +1069,9 @@ h1, h2, h3, h4, h5, h6 {
 #blog header p span{
     color: #FF0036;
 }
+#blog .hide {
+    display: none;
+}
 #blog .blog_img{
     background-color: #56CA7F;
     width: 278px;
@@ -1076,6 +1079,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #blog .blog_img img{
     width: 100%;
+    height: 100%;
 }
 #blog .blog_img:hover{
     opacity: 0.5;
@@ -1114,10 +1118,10 @@ h1, h2, h3, h4, h5, h6 {
     height: 35px;
     background-color: #F2F2F2;
     border-radius: 50%;
+    border: none;
 }
 #blog .down i{
     font-size: 24px;
-    margin-left: -2px;
     color: #A2A2A2;
 }
 
@@ -1320,6 +1324,3 @@ footer{
     color: #a4a4a4;
 }
 
-.hide {
-    display: none;
-}
